@@ -1,0 +1,61 @@
+.table-row {
+  border-top: 1px solid black;
+}
+
+.table-container {
+  width: 100%;
+  height: 90%;
+}
+
+.table-header {
+  font-weight: bold;
+}
+
+.table-body {
+  color: black;
+}
+
+.dropdown-menu {
+  height: 2.5em;
+  text-align: center;
+  width: 7em;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding-top: 10px;
+  padding-bottom: -10px;
+}
+
+select {
+  border: none;
+  width: 122px;
+  height: 38px;
+  border-radius: 3px;
+}
+
+select option {
+  background-color: white;
+}
+select option:first-child {
+  background-color: #ff6584;
+}
+
+select:hover {
+  box-shadow: 0 0 10px 100px #ff6584 inset;
+}
+
+.green {
+  color: #5cb85c;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}

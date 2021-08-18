@@ -1,0 +1,138 @@
+header {
+  width: 100%;
+  height: 60px;
+  color: var(--nav-text);
+  background: var(--nav-bg);
+  grid-column: 1 / -1;
+  margin-bottom: 30px;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 0 5%;
+}
+
+nav a {
+  box-shadow: none;
+  color: inherit;
+  border-color: var(--nav-text);
+}
+
+.flyout-target {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.sandwich * {
+  margin-right: 1em;
+}
+
+.sandwich {
+  text-align: left;
+}
+
+.user-nav * {
+  margin-left: 1em;
+  transition: none;
+}
+
+.user-nav *:hover {
+  transition: none;
+}
+
+.flyout {
+  display: none;
+}
+
+#flyout-input {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  header .logo {
+    z-index: 6;
+  }
+
+  nav {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .flyout {
+    display: block;
+    z-index: 6;
+  }
+
+  .flyout:hover {
+    cursor: pointer;
+  }
+
+  #flyout-input {
+    display: block;
+    opacity: 0;
+    z-index: 6;
+  }
+
+  .flyout-target {
+    position: absolute;
+    top: 0px;
+    padding-top: 60px;
+    right: -100vw;
+    height: 100vh;
+    z-index: 5;
+    display: block;
+    background: var(--nav-bg);
+    color: var(--light);
+    transition: 0.2s linear;
+  }
+
+  .sandwich {
+    display: grid;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 25px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 40px 40px;
+    z-index: 5;
+    width: 100vw;
+    align-items: center;
+  }
+
+  .user-nav {
+    display: grid;
+    padding-bottom: 2em;
+    padding-top: 1em;
+    padding-left: 25px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px auto;
+    width: 100vw;
+    align-items: center;
+  }
+
+  .sandwich * {
+    display: inline-block;
+    margin-right: 0;
+  }
+
+  .user-nav * {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+    border-color: var(--light);
+  }
+
+  .user-nav a:hover {
+    box-shadow: none;
+  }
+
+  header .button {
+    padding: 15px;
+  }
+
+  #flyout-input:checked + label + .flyout-target {
+    right: 0px;
+  }
+}

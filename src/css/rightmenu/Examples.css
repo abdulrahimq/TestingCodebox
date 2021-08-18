@@ -1,0 +1,66 @@
+.examples-container {
+  width: 100%;
+  padding: 10px;
+}
+
+.examples-header {
+  width: 100%;
+  border: 1px dotted black;
+  display: flex;
+}
+.examples-header-title {
+  margin: 0;
+  display: inline-block;
+}
+.examples-text {
+  height: 75%;
+  width: 95%;
+  padding: 0.2em 0em 0em 0.2em;
+}
+
+.create-button {
+  margin-left: 10px;
+}
+
+.edit-button {
+  margin-left: 10px;
+}
+
+.example-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example-cancel {
+  height: 50%;
+}
+
+.example-body {
+  align-items: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#example-text {
+  width: 100%;
+  height: 30%;
+  margin-bottom: 15px;
+}
+
+#example-textarea {
+  width: 100%;
+  height: 240%;
+  margin-bottom: 15px;
+}
+
+.example-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+Button:hover * {
+  cursor: pointer;
+}

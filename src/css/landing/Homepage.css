@@ -1,0 +1,57 @@
+section,
+footer {
+  font-size: 1.2em;
+}
+
+.properties {
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 100vh;
+  text-align: left;
+}
+
+.properties-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 112px;
+  align-items: flex-start;
+  align-self: stretch;
+  justify-content: flex-start;
+  overflow: visible;
+  grid-auto-flow: dense;
+}
+
+.properties-card-right {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: flex-start;
+  align-self: stretch;
+  overflow: visible;
+  grid-auto-flow: dense;
+  height: 100vh;
+}
+
+.properties-card-top {
+  display: grid;
+  width: 100%;
+  height: 70vh;
+}
+
+.properties-card-bottom {
+  display: grid;
+  width: 100%;
+  height: 30vh;
+}
+
+@media (max-width: 1000px) {
+  #properties {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .properties-card {
+    grid-template-columns: 1fr;
+    padding: 2em 0;
+    grid-gap: 2em;
+  }
+}
