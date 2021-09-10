@@ -32,7 +32,6 @@ class PropertyTable extends React.Component {
       disabled: false
     };
     this.sortAlphabetically = this.sortAlphabetically.bind(this);
-    this.setValues = this.setValues.bind(this);
     this.changedItem = this.changedItem.bind(this);
     this.savedItem = this.savedItem.bind(this);
     this.enableSaveAll = this.enableSaveAll.bind(this);
@@ -138,14 +137,7 @@ class PropertyTable extends React.Component {
     this.setState({ items: arr, arrowDown: !this.state.arrowDown });
   }
 
-  setValues(e) {
-    const tempAllValues = this.state.allValues;
-    tempAllValues.push(
-      e.currentTarget.previousElementSibling.previousElementSibling.value
-    );
-    this.setState({ allValues: tempAllValues });
-  }
-
+  // This to ENABLE the saved all button.
   enableSaveAll() {
     for (let idx in this.state.items) {
       let element = this.state.items[idx];
@@ -157,6 +149,7 @@ class PropertyTable extends React.Component {
     this.setState({ disabled: false });
   }
 
+  // This function works for saving all new data.
   saveAll() {
     let tempItems = this.state.items;
     for (let i in tempItems) {
@@ -168,6 +161,7 @@ class PropertyTable extends React.Component {
     this.enableSaveAll();
   }
 
+  // TODO: Need to change the code to run at start
   componentDidMount() {
     this.props.fetchData();
     console.log("componentDidMount", this.props);
