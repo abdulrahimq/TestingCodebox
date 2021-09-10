@@ -10,24 +10,29 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { faAngleRight, faPlus } from "@fortawesome/free-solid-svg-icons";
 library.add(faAngleRight, faPlus);
 
+
 class PropertyTable extends React.Component {
+  /**
+   * This table is the main parent for the left side view.
+   * It has TableList -> TableRow -> CustomSelect
+   */
   constructor(props) {
     super(props);
     this.state = {
       ready: false,
+      // TODO: only need two from data, items, and original
       data: [],
-      description: "",
-      examples: "",
-      //items: myConstant.DATA,
-      //items: this.props.items,
       items: [],
       original: [],
-      //original: this.props.original,
+      // TODO: Check to see if needed
+      description: "",
+      examples: "",
+      // arrowDown used to change the sign of the arrow
       arrowDown: true,
+      // certainty, value, and selected are used for highlighting.
       certainty: "",
       value: "",
       selected: -1,
-      //allValues: this.getAllValues(myConstant.DATA, "value"),
       allValues: this.getAllValues(this.props.items, "value"),
       disabled: false
     };
@@ -123,6 +128,7 @@ class PropertyTable extends React.Component {
     return newSet;
   }
 
+  // This function is use to compare between property name, value, and certainty.
   sortAlphabetically(prop) {
     const arr = this.state.items;
     if (this.state.arrowDown) {
@@ -201,7 +207,6 @@ class PropertyTable extends React.Component {
           <TableList
             items={this.state.items}
             setStateA={this.props.setStateA}
-            arrowDown={this.props.arrowDown}
             clickHighlight={this.clickHighlight}
             selected={this.state.selected}
             sortAlphabetically={this.sortAlphabetically}

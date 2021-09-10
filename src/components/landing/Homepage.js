@@ -25,6 +25,12 @@ const myRequest = new Request(url_1, {
   TODO: Remove one of the following items, original, or data as they are redundant.
 */}
 class Homepage extends React.Component {
+  /**
+   * This main container
+   * It has:
+   * PropertyTable which is the left-side of the page
+   * Examples and PropertyDesc which are the right-side of the page
+   */
   constructor(props) {
     super(props);
     this.setStateA = this.setStateA.bind(this);
