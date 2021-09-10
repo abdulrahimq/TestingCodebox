@@ -68,7 +68,7 @@ class Examples extends React.Component {
   }
 
   createElements(props) {
-    var elements = [];
+    let elements = [];
     for (let i = 0; i < props.length; i++) {
       let lines = [];
       lines.push(props[i].word);

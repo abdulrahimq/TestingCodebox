@@ -33,12 +33,16 @@ class CustomModal extends Component {
               placeholder="Enter A Title"
               value={this.props.headerValue}
               onChange={this.props.createHeader}
-            ></input>
+            >
+
+            </input>
             <textarea
               value={this.props.value}
               onChange={this.props.createExample}
               id="example-textarea"
-            ></textarea>
+            >
+
+            </textarea>
             <div className="example-buttons">
               <Button
                 id="create-button"

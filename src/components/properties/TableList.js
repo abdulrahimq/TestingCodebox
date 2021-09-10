@@ -61,7 +61,8 @@ class TableList extends React.Component {
                 sortAlphabetically={this.props.sortAlphabetically}
               />
             </th>
-            <th></th>
+            <th>
+            </th>
           </tr>
         </thead>
         <tbody className="table-body">{itemsList}</tbody>

@@ -32,7 +32,7 @@ class Homepage extends React.Component {
     this.fetchData = this.fetchData.bind(this);
     this.state = {
       desc: "No property has been selected yet",
-      examples: ["No property has been selected for editing exampels yet."],
+      examples: ["No property has been selected for editing examples yet."],
       id: -1,
       exampleID: 0,
       //items: myConstant.DATA,
@@ -48,10 +48,10 @@ class Homepage extends React.Component {
     fetch(myRequest)
       .then((response) => response.json())
       .then((data) => {
-        var cer = ["Certain", "Unsure", "Need Help", "N/A"];
-        var data_arr = [];
-        for (var i in data["ling_properties"]) {
-          var lp = {
+        let cer = ["Certain", "Unsure", "Need Help", "N/A"];
+        let data_arr = [];
+        for (let i in data["ling_properties"]) {
+          let lp = {
             key: i,
             name: data["ling_properties"][i]["name"],
             examples: data["ling_properties"][i]["examples"],
