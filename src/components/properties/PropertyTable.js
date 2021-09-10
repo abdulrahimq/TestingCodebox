@@ -177,7 +177,7 @@ class PropertyTable extends React.Component {
   }
 
   render() {
-    console.log("Prop Table 33");
+    console.log("Prop Table 34");
     return (
       <div>
         <div className="property-table">
@@ -218,19 +218,6 @@ class PropertyTable extends React.Component {
             enableSaveAll={this.enableSaveAll}
           />
         </div>
-        {/**
-        <br></br>
-        <div>
-          <label htmlFor="fname">Add Value: </label>
-          <input type="text" id="fname" name="fname"></input>
-          <label> </label>
-          <input
-            type="submit"
-            value="Submit"
-            onClick={(e) => this.setValues(e)}
-          ></input>
-        </div>
-         */}
       </div>
     );
   }
