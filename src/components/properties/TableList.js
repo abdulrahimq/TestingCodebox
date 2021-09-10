@@ -20,6 +20,7 @@ class TableList extends React.Component {
     const allSurness = this.props.allSurness;
     const itemsList = items.map((item, index) => (
       <TableRow
+        key={index}
         index={index}
         item={item}
         allValues={allValues}

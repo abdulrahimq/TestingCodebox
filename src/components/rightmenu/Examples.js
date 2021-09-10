@@ -79,6 +79,7 @@ class Examples extends React.Component {
       elements.push(
         <Example
           value={props[i]}
+          key={i}
           i={i}
           clickHighlightExample={this.clickHighlightExample}
           selected={this.state.selected}

@@ -7,13 +7,12 @@ import PropertyTable from "../properties/PropertyTable";
 import Examples from "../rightmenu/Examples";
 import "../../css/landing/Homepage.css";
 import PropertyDesc from "../rightmenu/PropertyDesc";
-//import * as myConstant from "../properties/Constants.js";
 
-//const groupId = 1;
-//const lingId = 1;
-//const url =
-//"http://localhost:3000/groups/" + groupId + "/lings/" + lingId + ".json";
+{/*
+  TODO: the following url_1 and url_prop needs to be changed to dynamic input
+*/}
 const url_1 = "https://terraling.com/groups/8/lings/1081.json";
+const url_prop = "https://terraling.com/groups/" + 8 + "/properties/";
 const myRequest = new Request(url_1, {
   headers: {
     accept: "application/json",
@@ -22,8 +21,9 @@ const myRequest = new Request(url_1, {
   }
 });
 
-const url_prop = "https://terraling.com/groups/" + 8 + "/properties/";
-
+{/*
+  TODO: Remove one of the following items, original, or data as they are redundant.
+*/}
 class Homepage extends React.Component {
   constructor(props) {
     super(props);
@@ -35,8 +35,6 @@ class Homepage extends React.Component {
       examples: ["No property has been selected for editing examples yet."],
       id: -1,
       exampleID: 0,
-      //items: myConstant.DATA,
-      //original: myConstant.ORIGIN,
       items: [],
       original: [],
       data: []
@@ -72,7 +70,6 @@ class Homepage extends React.Component {
           items: data_arr,
           original: data_arr
         });
-
         console.log("READY: ", data);
       });
   }
@@ -83,6 +80,7 @@ class Homepage extends React.Component {
     //console.log("HOMEPAGE MOUNT");
     //this.fetchData();
   }
+
 
   addNewExample(newExample, newExampleTitle) {
     console.log("newExampleTitle", newExampleTitle);

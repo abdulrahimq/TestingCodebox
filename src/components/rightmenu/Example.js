@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import "../../css/rightmenu/Examples.css";
+import alignWords from "@digitallinguistics/word-aligner";
 
 class Example extends Component {
   constructor(props) {
@@ -17,7 +18,8 @@ class Example extends Component {
     lines.push(this.props.value.word);
     lines.push(this.props.value.gloss);
     lines.push(this.props.value.translation);
-    //const values = alignWords(lines);
+    lines = alignWords(["hello", " hello", "marhaba"]);
+    console.log("MOUNT EXAMPLE: ALIGN ", lines)
     this.setState({ toShowLines: lines });
   }
 
