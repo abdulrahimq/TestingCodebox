@@ -40,9 +40,6 @@ select {
 select option {
   background-color: white;
 }
-select option:first-child {
-  background-color: #ff6584;
-}
 
 select:hover {
   box-shadow: 0 0 10px 100px #ff6584 inset;

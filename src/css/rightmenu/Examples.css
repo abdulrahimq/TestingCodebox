@@ -1,3 +1,8 @@
+.example-word {
+  font-weight: bold;
+  font-style: italic;
+}
+
 .examples-container {
   width: 100%;
   padding: 10px;
@@ -13,7 +18,6 @@
   display: inline-block;
 }
 .examples-text {
-  height: 75%;
   width: 95%;
   padding: 0.2em 0em 0em 0.2em;
 }
@@ -63,4 +67,8 @@
 
 Button:hover * {
   cursor: pointer;
+}
+
+.example-header-item {
+  font-weight: bold;
 }

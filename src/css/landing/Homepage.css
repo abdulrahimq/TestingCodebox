@@ -26,7 +26,8 @@ footer {
   grid-template-rows: 1fr 1fr;
   align-items: flex-start;
   align-self: stretch;
-  overflow: visible;
+  overflow: scroll;
+  overflow-x: hidden;
   grid-auto-flow: dense;
   height: 100vh;
 }
@@ -35,6 +36,14 @@ footer {
   display: grid;
   width: 100%;
   height: 70vh;
+  overflow: scroll;
+}
+
+.property-text {
+  background-color: white;
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
 }
 
 .properties-card-bottom {
