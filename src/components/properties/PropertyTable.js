@@ -177,7 +177,7 @@ class PropertyTable extends React.Component {
   }
 
   render() {
-    console.log("Prop Table 34");
+    console.log("Prop Table 35");
     return (
       <div>
         <div className="property-table">
