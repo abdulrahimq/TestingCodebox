@@ -25,7 +25,9 @@ export const ORIGIN = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "1 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 2,
@@ -53,7 +55,9 @@ export const ORIGIN = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "2 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 3,
@@ -81,7 +85,9 @@ export const ORIGIN = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "3 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 4,
@@ -109,7 +115,9 @@ export const ORIGIN = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "4 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 5,
@@ -137,7 +145,9 @@ export const ORIGIN = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 6,
@@ -165,7 +175,9 @@ export const ORIGIN = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "6 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "6 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 7,
@@ -193,7 +205,9 @@ export const ORIGIN = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "7 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "7 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 8,
@@ -221,7 +235,9 @@ export const ORIGIN = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "8 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "8 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 9,
@@ -249,7 +265,9 @@ export const ORIGIN = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "9 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "9 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 10,
@@ -277,7 +295,9 @@ export const ORIGIN = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "10 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "10 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 11,
@@ -305,7 +325,9 @@ export const ORIGIN = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "11 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "11 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 12,
@@ -333,7 +355,9 @@ export const ORIGIN = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "12 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "12 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 13,
@@ -361,7 +385,9 @@ export const ORIGIN = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "13 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "13 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 14,
@@ -389,7 +415,9 @@ export const ORIGIN = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "14 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "14 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 15,
@@ -417,7 +445,9 @@ export const ORIGIN = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "15 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "15 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 16,
@@ -445,7 +475,9 @@ export const ORIGIN = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "16 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "16 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 17,
@@ -473,7 +505,9 @@ export const ORIGIN = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "17 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "17 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 18,
@@ -529,7 +563,9 @@ export const ORIGIN = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "19 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "19 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 20,
@@ -557,7 +593,9 @@ export const ORIGIN = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "20 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "20 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 21,
@@ -585,7 +623,9 @@ export const ORIGIN = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "21 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "21 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     value: "N/A",
@@ -613,35 +653,20 @@ export const ORIGIN = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "22 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "22 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 23,
-    title: "PN Subj",
+    title: "No Example",
     completed: false,
     value: "N/A",
     surness: "None",
-    examples: [
-      {
-        name: "Example_16069",
-        description: "",
-        word: "Jan en Marie hebben elkaar ontmoet",
-        gloss: "John and Marie have each.other mett",
-        translation: "John and Marie met ",
-        comment: 'The reciprocal "elkaar" is obligatory. ',
-        creator: "Hilda Koopman"
-      },
-      {
-        name: "Example_16070",
-        description: "",
-        word: "Marie en Bill zijn samen vertrokken",
-        gloss: "Marie and Bill be.3pl together left",
-        translation: "Marie and Bill left together",
-        comment: " ",
-        creator: "Hilda Koopman"
-      }
-    ],
-    property: "23 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    examples: [],
+    property: "23 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 24,
@@ -669,7 +694,9 @@ export const ORIGIN = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "24 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "24 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   }
 ];
 
@@ -700,7 +727,9 @@ export const DATA = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "1 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 2,
@@ -728,7 +757,9 @@ export const DATA = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "2 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 3,
@@ -756,7 +787,9 @@ export const DATA = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "3 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 4,
@@ -784,7 +817,9 @@ export const DATA = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "4 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 5,
@@ -812,7 +847,9 @@ export const DATA = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 6,
@@ -840,7 +877,9 @@ export const DATA = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "6 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "6 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 7,
@@ -868,7 +907,9 @@ export const DATA = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "7 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "7 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 8,
@@ -896,7 +937,9 @@ export const DATA = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "8 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "8 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 9,
@@ -924,7 +967,9 @@ export const DATA = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "9 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "9 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 10,
@@ -952,7 +997,9 @@ export const DATA = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "10 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "10 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 11,
@@ -980,7 +1027,9 @@ export const DATA = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "11 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "11 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 12,
@@ -988,8 +1037,29 @@ export const DATA = [
     completed: false,
     value: "N/A",
     surness: "None",
-    examples: "12 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    property: "12 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    examples: [
+      {
+        name: "Example_16069",
+        description: "",
+        word: "Jan en Marie hebben elkaar ontmoet",
+        gloss: "John and Marie have each.other mett",
+        translation: "John and Marie met ",
+        comment: 'The reciprocal "elkaar" is obligatory. ',
+        creator: "Hilda Koopman"
+      },
+      {
+        name: "Example_16070",
+        description: "",
+        word: "Marie en Bill zijn samen vertrokken",
+        gloss: "Marie and Bill be.3pl together left",
+        translation: "Marie and Bill left together",
+        comment: " ",
+        creator: "Hilda Koopman"
+      }
+    ],
+    property: "12 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 13,
@@ -1017,7 +1087,9 @@ export const DATA = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "13 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "13 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 14,
@@ -1045,7 +1117,9 @@ export const DATA = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "14 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "14 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 15,
@@ -1073,7 +1147,9 @@ export const DATA = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "15 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "15 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 16,
@@ -1101,7 +1177,9 @@ export const DATA = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "16 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "16 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 17,
@@ -1129,7 +1207,9 @@ export const DATA = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "17 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "17 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 18,
@@ -1157,7 +1237,9 @@ export const DATA = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "18 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "18 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 19,
@@ -1185,7 +1267,9 @@ export const DATA = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "19 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "19 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 20,
@@ -1213,7 +1297,9 @@ export const DATA = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "20 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "20 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 21,
@@ -1241,7 +1327,9 @@ export const DATA = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "21 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "21 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     value: "N/A",
@@ -1269,35 +1357,20 @@ export const DATA = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "22 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "22 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 23,
-    title: "PN Subj",
+    title: "No Example",
     completed: false,
     value: "N/A",
     surness: "None",
-    examples: [
-      {
-        name: "Example_16069",
-        description: "",
-        word: "Jan en Marie hebben elkaar ontmoet",
-        gloss: "John and Marie have each.other mett",
-        translation: "John and Marie met ",
-        comment: 'The reciprocal "elkaar" is obligatory. ',
-        creator: "Hilda Koopman"
-      },
-      {
-        name: "Example_16070",
-        description: "",
-        word: "Marie en Bill zijn samen vertrokken",
-        gloss: "Marie and Bill be.3pl together left",
-        translation: "Marie and Bill left together",
-        comment: " ",
-        creator: "Hilda Koopman"
-      }
-    ],
-    property: "23 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    examples: [],
+    property: "23 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   },
   {
     id: 24,
@@ -1325,7 +1398,9 @@ export const DATA = [
         creator: "Hilda Koopman"
       }
     ],
-    property: "24 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    property: "24 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    saved: false,
+    changed: false
   }
 ];
 

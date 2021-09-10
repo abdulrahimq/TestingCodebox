@@ -1,5 +1,6 @@
 import React from "react";
 import "../../css/rightmenu/PropertyDesc.css";
+import ReactHtmlParser from "react-html-parser";
 
 class PropertyDesc extends React.Component {
   render() {
@@ -8,11 +9,12 @@ class PropertyDesc extends React.Component {
         <div className="property-header">
           <h1 className="property-title">Property Name</h1>
         </div>
-        <textarea
+        {/*<textarea
           disabled
           className="property-text"
           value={this.props.desc}
-        ></textarea>
+        ></textarea> */}
+        <div className="property-text">{ReactHtmlParser(this.props.desc)}</div>
       </div>
     );
   }
