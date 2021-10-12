@@ -178,7 +178,13 @@ class PropertyTable extends React.Component {
   }
 
   render() {
-    console.log("Prop Table 61");
+    console.log("Prop Table 74");
+    console.log("LING: ", this.props.langName)
+    let title = "Properties";
+    if(this.props.langName){
+      title = title + " of " + this.props.langName
+    }
+
     return (
       <div>
         <div className="property-table">
@@ -192,7 +198,7 @@ class PropertyTable extends React.Component {
                 this.props.setStateA();
               }}
             >
-              Properties
+              {title}
             </h1>
             <Button
               className="save-all"

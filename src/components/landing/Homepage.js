@@ -44,7 +44,8 @@ class Homepage extends React.Component {
       items: [],
       original: [],
       data: [],
-      descName: "Property Name"
+      descName: "Property Name",
+      langName: ""
     };
   }
 
@@ -75,9 +76,9 @@ class Homepage extends React.Component {
           data: data_arr,
           ready: true,
           items: data_arr,
-          original: data_arr
+          original: data_arr,
+          langName: data['ling_name']
         });
-        console.log("READY: ", data);
       });
   }
 
@@ -90,13 +91,13 @@ class Homepage extends React.Component {
 
 
   addNewExample(newExample, newExampleTitle) {
-    console.log("newExampleTitle", newExampleTitle);
+    //console.log("newExampleTitle", newExampleTitle);
     newExample["name"] = newExampleTitle;
-    console.log("ADD NEW EXAMPLE START: ", newExample);
+    //console.log("ADD NEW EXAMPLE START: ", newExample);
     const tempExamples = this.state.examples;
     tempExamples.push(newExample);
     this.setState({ examples: tempExamples });
-    console.log("ADD NEW EXAMPLE DONE: ", newExample);
+    //console.log("ADD NEW EXAMPLE DONE: ", newExample);
   }
 
   setStateA(descNew, examplesNew, examplesID, descNameNew) {
@@ -116,7 +117,7 @@ class Homepage extends React.Component {
           desc: description,
           descName: descNameNew
         });
-        //console.log("SETSTATE A: ", data);
+        console.log("SETSTATE A: ", data);
       });
   }
 
@@ -130,6 +131,7 @@ class Homepage extends React.Component {
               items={this.state.items}
               original={this.state.original}
               fetchData={this.fetchData}
+              langName={this.state.langName}
             />
             <div className="properties-card-right">
               <div className="properties-card-top">
