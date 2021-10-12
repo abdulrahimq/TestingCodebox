@@ -7,7 +7,7 @@ class PropertyDesc extends React.Component {
     return (
       <div className="property-container">
         <div className="property-header">
-          <h1 className="property-title">Property Name</h1>
+          <h1 className="property-title">{this.props.descName}</h1>
         </div>
         <div className="property-text">{ReactHtmlParser(this.props.desc)}</div>
       </div>

@@ -97,7 +97,7 @@ class PropertyTable extends React.Component {
       value: item.value,
       certainty: item.certainty
     });
-    this.props.setStateA(item.property, item.examples, item.id);
+    this.props.setStateA(item.property, item.examples, item.id, item.name);
   };
 
   compareProperties(prop1, prop2) {
@@ -178,7 +178,7 @@ class PropertyTable extends React.Component {
   }
 
   render() {
-    console.log("Prop Table 59");
+    console.log("Prop Table 61");
     return (
       <div>
         <div className="property-table">

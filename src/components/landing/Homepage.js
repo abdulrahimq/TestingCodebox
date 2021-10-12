@@ -43,7 +43,8 @@ class Homepage extends React.Component {
       exampleID: 0,
       items: [],
       original: [],
-      data: []
+      data: [],
+      descName: "Property Name"
     };
   }
 
@@ -98,7 +99,7 @@ class Homepage extends React.Component {
     console.log("ADD NEW EXAMPLE DONE: ", newExample);
   }
 
-  setStateA(descNew, examplesNew, examplesID) {
+  setStateA(descNew, examplesNew, examplesID, descNameNew) {
     this.setState({ desc: descNew, examples: examplesNew });
     const myRequest = new Request(url_prop + examplesID, {
       headers: {
@@ -112,7 +113,8 @@ class Homepage extends React.Component {
       .then((data) => {
         const description = data["property_description"];
         this.setState({
-          desc: description
+          desc: description,
+          descName: descNameNew
         });
         //console.log("SETSTATE A: ", data);
       });
@@ -131,7 +133,7 @@ class Homepage extends React.Component {
             />
             <div className="properties-card-right">
               <div className="properties-card-top">
-                <PropertyDesc desc={this.state.desc} />
+                <PropertyDesc desc={this.state.desc} descName={this.state.descName}/>
               </div>
               {
                 <div className="properties-card-bottom">
