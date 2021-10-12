@@ -8,6 +8,8 @@ import TableList from "./TableList";
 import Button from "@material-ui/core/Button";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faAngleRight, faPlus } from "@fortawesome/free-solid-svg-icons";
+import alignWords from '@digitallinguistics/word-aligner';
+
 library.add(faAngleRight, faPlus);
 
 
@@ -104,7 +106,6 @@ class PropertyTable extends React.Component {
         prop1.completed === prop2.completed &&
         prop1.value === prop2.value &&
         prop1.certainty === prop2.certainty;
-
   }
 
   findChangedPropertiesIDs(a, b) {
@@ -177,7 +178,7 @@ class PropertyTable extends React.Component {
   }
 
   render() {
-    console.log("Prop Table 35");
+    console.log("Prop Table 59");
     return (
       <div>
         <div className="property-table">

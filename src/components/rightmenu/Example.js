@@ -13,18 +13,15 @@ class Example extends Component {
 
   componentDidMount() {
     this.props.changeEditValue();
-    console.log("MOUNT EXAMPLE", typeof this.props.value.word);
+    console.log("MOUNT EXAMPLE", this.props.value);
     let lines = [];
     lines.push(this.props.value.word);
     lines.push(this.props.value.gloss);
     lines.push(this.props.value.translation);
-    lines = alignWords(["hello", " hello", "marhaba"]);
-    console.log("MOUNT EXAMPLE: ALIGN ", lines)
     this.setState({ toShowLines: lines });
   }
 
   render() {
-    console.log("Example ", this.state.toShowLines);
     return (
       <div
         id={"example-" + this.props.i}

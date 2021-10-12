@@ -72,3 +72,22 @@ Button:hover * {
 .example-header-item {
   font-weight: bold;
 }
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  line-height: 1em;
+}
+
+#example-text {
+  height: 40px;
+}
+
+#example-creator {
+  height: 30px;
+}

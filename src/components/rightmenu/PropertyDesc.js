@@ -9,11 +9,6 @@ class PropertyDesc extends React.Component {
         <div className="property-header">
           <h1 className="property-title">Property Name</h1>
         </div>
-        {/*<textarea
-          disabled
-          className="property-text"
-          value={this.props.desc}
-        ></textarea> */}
         <div className="property-text">{ReactHtmlParser(this.props.desc)}</div>
       </div>
     );

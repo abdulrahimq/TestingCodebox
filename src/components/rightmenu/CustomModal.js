@@ -1,16 +1,21 @@
 import React, { Component } from "react";
 import Modal from "react-modal";
 import Button from "@material-ui/core/Button";
+import "../../css/rightmenu/Examples.css";
+import CustomInput from "./CustomInput";
+
 
 class CustomModal extends Component {
   constructor(props) {
     super(props);
-    this.state = { value: "" };
+    this.state = { value: "", testValue: "TEST"};
   }
+
 
   componentDidMount() {
     Modal.setAppElement("body");
   }
+
 
   render() {
     return (
@@ -34,14 +39,63 @@ class CustomModal extends Component {
               value={this.props.headerValue}
               onChange={this.props.createHeader}
             >
-
             </input>
+        <div className="example-container">
+            {/*<label>Property Description</label>
+            <CustomInput
+                type="text"
+                id="example-description"
+                name="example-description"
+                placeholder=""
+                default={this.props.example.description}
+            />*/}
+            <label>Property Word</label>
+            <CustomInput
+                type="text"
+                id="example-word"
+                name="example-word"
+                placeholder=""
+                default={this.props.example.word}
+            />
+            <label>Property Gloss</label>
+            <CustomInput
+                type="text"
+                id="example-gloss"
+                name="example-gloss"
+                placeholder=""
+                default={this.props.example.gloss}
+            />
+            <label>Property Translation</label>
+            <CustomInput
+                type="text"
+                id="example-translation"
+                name="example-translation"
+                placeholder=""
+                default={this.props.example.translation}
+            />
+            <label>Property Comment</label>
+            <CustomInput
+                type="text"
+                id="example-comment"
+                name="example-comment"
+                placeholder=""
+                default={this.props.example.comment}
+            />
+
+            <label>Property Creator</label>
+            <CustomInput
+                type="text"
+                id="example-creator"
+                name="example-creator"
+                placeholder=""
+                default={this.props.example.creator}
+            />
+          </div>
             <textarea
               value={this.props.value}
               onChange={this.props.createExample}
               id="example-textarea"
             >
-
             </textarea>
             <div className="example-buttons">
               <Button

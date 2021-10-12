@@ -139,6 +139,7 @@ class Homepage extends React.Component {
                     examples={this.state.examples}
                     propertyID={this.state.id}
                     exampleID={this.state.exampleID}
+                    example={this.state.examples[this.state.exampleID]}
                     addNewExample={(e, e1) => this.addNewExample(e, e1)}
                   />
                 </div>
