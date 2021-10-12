@@ -29,7 +29,7 @@ footer {
   overflow: scroll;
   overflow-x: hidden;
   grid-auto-flow: dense;
-  height: 100vh;
+  overflow: hidden;
 }
 
 .properties-card-top {
