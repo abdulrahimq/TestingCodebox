@@ -18,7 +18,7 @@ class Examples extends React.Component {
       modalCreateIsOpen: false,
       selected: 0,
       value:
-        "Property Description: \nProperty Word: \nProperty Gloss: \nProperty Translation: '' \nProperty Comment: \nProperty Creator: ",
+        "Property Word: \nProperty Gloss: \nProperty Translation: '' \nProperty Comment: \nProperty Creator: ",
       headerValue: "",
       editValue: "",
       editHeaderValue: "",
@@ -42,7 +42,7 @@ class Examples extends React.Component {
   componentDidMount() {
     this.setState({
       editValue:
-        "Property Description: \nProperty Word: \nProperty Gloss: \nProperty Translation: '' \nProperty Comment: \nProperty Creator: ",
+        "Property Word: \nProperty Gloss: \nProperty Translation: '' \nProperty Comment: \nProperty Creator: ",
       editHeaderValue: this.props.examples[this.state.selected].name
     });
   }
@@ -51,9 +51,7 @@ class Examples extends React.Component {
     const idx = this.state.selected;
     const textObject = this.props.examples[idx];
     const newEditValue =
-      "Property Description: " +
-      textObject.description +
-      "\nProperty Word: " +
+      "Property Word: " +
       textObject.word +
       "\nProperty Gloss: " +
       textObject.gloss +

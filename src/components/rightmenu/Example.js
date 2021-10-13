@@ -40,7 +40,6 @@ class Example extends Component {
         }}
       >
         <p className="example-header-item">{this.props.value.name}</p>
-        <p>Property Description: {this.props.value.description}</p>
         <p className="example-word">
           Property Word:{"  "}
           {this.props.value.word}
