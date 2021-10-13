@@ -209,7 +209,7 @@ class PropertyTable extends React.Component {
             clickHighlight={this.clickHighlight}
             selected={this.state.selected}
             sortAlphabetically={this.sortAlphabetically}
-            allValues={this.state.allValues}
+            allValues={this.getAllValues(this.props.items, "value")}
             allSurness={this.getAllValues(this.props.items, "certainty")}
             changedItem={this.changedItem}
             savedItem={this.savedItem}
