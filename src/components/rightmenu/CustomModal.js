@@ -18,6 +18,7 @@ class CustomModal extends Component {
 
 
   render() {
+    console.log("EXAMPLe: ", this.props.example)
     return (
       <Modal
         isOpen={this.props.modalIsOpen}
@@ -41,14 +42,6 @@ class CustomModal extends Component {
             >
             </input>
         <div className="example-container">
-            {/*<label>Property Description</label>
-            <CustomInput
-                type="text"
-                id="example-description"
-                name="example-description"
-                placeholder=""
-                default={this.props.example.description}
-            />*/}
             <label>Property Word</label>
             <CustomInput
                 type="text"

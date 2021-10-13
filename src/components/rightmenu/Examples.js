@@ -230,7 +230,7 @@ Property Creator: Hilda Koopman
             createHeader={(e) => this.createHeader(e)}
             headerValue={this.state.editHeaderValue}
             newExample={() => this.props.addNewExample()}
-            example={this.props.example}
+            example={this.state.example}
           />
 
           <CustomModal
