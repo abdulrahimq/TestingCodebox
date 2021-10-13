@@ -15,7 +15,7 @@ class TableList extends React.Component {
   }
 
   render() {
-    const items = this.props.items;
+    const items = JSON.parse(JSON.stringify(this.props.items));
     const allValues = this.props.allValues;
     const allSurness = this.props.allSurness;
     const itemsList = items.map((item, index) => (
@@ -33,7 +33,7 @@ class TableList extends React.Component {
         enableSaveAll={this.props.enableSaveAll}
       />
     ));
-
+    console.log("itemsList: ", itemsList)
     return (
       <table className="table-container">
         <thead className="table-header">
@@ -66,7 +66,9 @@ class TableList extends React.Component {
             </th>
           </tr>
         </thead>
-        <tbody className="table-body">{itemsList}</tbody>
+        <tbody className="table-body">
+          {itemsList}
+        </tbody>
       </table>
     );
   }

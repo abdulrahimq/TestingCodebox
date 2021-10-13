@@ -42,6 +42,7 @@ class PropertyTable extends React.Component {
     this.changedItem = this.changedItem.bind(this);
     this.savedItem = this.savedItem.bind(this);
     this.enableSaveAll = this.enableSaveAll.bind(this);
+    this.getAllValues = this.getAllValues.bind(this)
   }
 
   savedItem(item) {
@@ -168,17 +169,8 @@ class PropertyTable extends React.Component {
     this.enableSaveAll();
   }
 
-  // TODO: Need to change the code to run at start
-  componentDidMount() {
-    this.props.fetchData();
-    console.log("componentDidMount", this.props);
-    this.setState({ items: this.props.items, original: this.props.original });
-    console.log("Component DID MOUNT", this.state.item);
-    //this.setState({ items: this.props.items, original: this.props.original });
-  }
-
   render() {
-    console.log("Prop Table 74");
+    console.log("86 Prop Table");
     console.log("LING: ", this.props.langName)
     let title = "Properties";
     if(this.props.langName){
@@ -212,13 +204,13 @@ class PropertyTable extends React.Component {
             </Button>
           </div>
           <TableList
-            items={this.state.items}
-            setStateA={this.props.setStateA}
+            items={this.props.items}
+            setStateA={this.state.setStateA}
             clickHighlight={this.clickHighlight}
             selected={this.state.selected}
             sortAlphabetically={this.sortAlphabetically}
             allValues={this.state.allValues}
-            allSurness={this.getAllValues(this.state.items, "certainty")}
+            allSurness={this.getAllValues(this.props.items, "certainty")}
             changedItem={this.changedItem}
             savedItem={this.savedItem}
             enableSaveAll={this.enableSaveAll}

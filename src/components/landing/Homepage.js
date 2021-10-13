@@ -85,8 +85,7 @@ class Homepage extends React.Component {
   componentDidMount() {
     // GET request using fetch inside useEffect React hook
     // https://jasonwatmore.com/post/2020/01/27/react-fetch-http-get-request-examples
-    //console.log("HOMEPAGE MOUNT");
-    //this.fetchData();
+    this.fetchData();
   }
 
 
@@ -117,7 +116,6 @@ class Homepage extends React.Component {
           desc: description,
           descName: descNameNew
         });
-        console.log("SETSTATE A: ", data);
       });
   }
 
@@ -130,7 +128,6 @@ class Homepage extends React.Component {
               setStateA={this.setStateA}
               items={this.state.items}
               original={this.state.original}
-              fetchData={this.fetchData}
               langName={this.state.langName}
             />
             <div className="properties-card-right">
