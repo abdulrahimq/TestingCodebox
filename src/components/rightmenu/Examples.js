@@ -27,7 +27,6 @@ class Examples extends React.Component {
 
     this.createElements = this.createElements.bind(this);
     this.clickHighlightExample = this.clickHighlightExample.bind(this);
-    this.changeEditValue = this.changeEditValue.bind(this);
     this.closeCreateModal = this.closeCreateModal.bind(this);
     this.openCreateModal = this.openCreateModal.bind(this);
     this.closeEditModal = this.closeEditModal.bind(this);
@@ -53,26 +52,6 @@ class Examples extends React.Component {
     });
   }
 
-  changeEditValue() {
-    const idx = this.state.selected;
-    const textObject = this.props.examples[idx];
-    const newEditValue =
-      "Property Word: " +
-      textObject.word +
-      "\nProperty Gloss: " +
-      textObject.gloss +
-      "\nProperty Translation: ''" +
-      textObject.translation +
-      "\nProperty Comment: " +
-      textObject.comment +
-      "\nProperty Creator: " +
-      textObject.creator;
-    this.setState({
-      editValue: newEditValue,
-      editHeaderValue: this.props.examples[this.state.selected].name
-    });
-  }
-
   createElements(props) {
     let elements = [];
     for (let i = 0; i < props.length; i++) {
@@ -89,7 +68,6 @@ class Examples extends React.Component {
           i={i}
           clickHighlightExample={this.clickHighlightExample}
           selected={this.state.selected}
-          changeEditValue={this.changeEditValue}
         />
       );
     }
@@ -132,16 +110,6 @@ Property Creator: Hilda Koopman
     this.setState({ modalEditIsOpen: false });
   }
 
-
-  valueSetNew(e) {
-    console.log("CREATE :", e.currentTarget)
-    const element = e.currentTarget.parentNode.previousSibling
-    console.log("CREATE EXAMPLE:", element)
-    /*this.props.addNewExample(
-      element.previousSibling.value
-    );*/
-  }
-
   valueSet(e, modalType) {
 
     const element = e.currentTarget.parentNode.previousSibling
@@ -156,13 +124,13 @@ Property Creator: Hilda Koopman
     } else {
       this.props.editNewExample(
         this.state.example,
-        "EDITED"
+        "EDITED",
+        this.state.selected,
       )
     }
   }
 
   render() {
-    console.log("EXAMPLE STATE selected: ", this.state.selected)
     let disableEditButton = true;
     if (this.props.examples.length > 0) {
       disableEditButton = false;
@@ -217,7 +185,7 @@ Property Creator: Hilda Koopman
             headerValue={this.state.editHeaderValue}
             newExample={() => this.props.addNewExample()}
             valueSet={(e) => this.valueSet(e, "edit")}
-            example={this.props.examples[0]}
+            example={this.props.examples[this.state.selected]}
             setExampleValue={(newExample)=>this.setExampleValue(newExample)}
           />
           <CustomModal

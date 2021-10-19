@@ -12,8 +12,6 @@ class Example extends Component {
   }
 
   componentDidMount() {
-    this.props.changeEditValue();
-    console.log("MOUNT EXAMPLE", this.props.value);
     let lines = [];
     lines.push(this.props.value.word);
     lines.push(this.props.value.gloss);
@@ -36,7 +34,6 @@ class Example extends Component {
         }}
         onClick={() => {
           this.props.clickHighlightExample(this.props);
-          this.props.changeEditValue();
         }}
       >
         <p className="example-header-item">{this.props.value.name}</p>
