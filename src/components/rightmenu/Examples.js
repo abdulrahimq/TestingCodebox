@@ -96,31 +96,6 @@ class Examples extends React.Component {
     return elements;
   }
 
-  _convertValue(text) {
-    const validDesc = new RegExp("(?<=Property Description:)(.*?)(?=\\n)");
-    const validWord = new RegExp("(?<=Property Word:)(.*?)(?=\\n)");
-    const validGloss = new RegExp("(?<=Property Gloss:)(.*?)(?=\\n)");
-    const validTranslation = new RegExp(
-      "(?<=Property Translation:)(.*?)(?=\\n)"
-    );
-    const validComment = new RegExp("(?<=Property Comment:)(.*?)(?=\\n)");
-    const validCreator = new RegExp("(?<=Property Creator:)(.*)");
-    //console.log("EXAMPLES CONVERT validWord: ", validWord);
-    //console.log("EXAMPLES CONVERT validGloss: ", validGloss);
-    //console.log("EXAMPLES CONVERT VALIDTRANSLATION:", validTranslation)
-    const lines = [validWord.exec(text)[0], validGloss.exec(text)[0], validTranslation.exec(text)[0]];
-    //console.log("EXAMPLES CONVERT LINES: ", lines);
-    const aligned = alignWords(lines)
-    //console.log("EXAMPLES CONVERT ALIGNED: ", aligned);
-    return {
-      word: aligned[0],
-      gloss: aligned[1],
-      translation: aligned[2],
-      comment: validComment.exec(text)[0],
-      creator: validCreator.exec(text)[0],
-      name: ""
-    };
-  }
 
   /*
 name: "Example_99",
@@ -167,21 +142,23 @@ Property Creator: Hilda Koopman
     );*/
   }
 
-  valueSet(e) {
+  valueSet(e, modalType) {
 
     const element = e.currentTarget.parentNode.previousSibling
     console.log("CREATE EXAMPLE:", element)
-    let value = this._convertValue(element.value);
-    value["name"] = element.previousSibling.value;
-    // this.props.addNewExample(
-    //     this._convertValue(element.value),
-    //     element.previousSibling.value
-    // );
     console.log("CREATE EXAMPLE!!: ", this.state.example)
-    this.props.addNewExample(
+    
+    if (modalType == "create") {
+      this.props.addNewExample(
+          this.state.example,
+          "TEMP"
+      );      
+    } else {
+      this.props.editNewExample(
         this.state.example,
-        "TEMP"
-    );
+        "EDITED"
+      )
+    }
   }
 
   render() {
@@ -239,7 +216,9 @@ Property Creator: Hilda Koopman
             createHeader={(e) => this.createHeader(e)}
             headerValue={this.state.editHeaderValue}
             newExample={() => this.props.addNewExample()}
-            example={this.state.example}
+            valueSet={(e) => this.valueSet(e, "edit")}
+            example={this.props.examples[0]}
+            setExampleValue={(newExample)=>this.setExampleValue(newExample)}
           />
           <CustomModal
             modalIsOpen={this.state.modalCreateIsOpen}
@@ -252,7 +231,7 @@ Property Creator: Hilda Koopman
             createHeader={(e) => this.createHeader(e)}
             headerValue={this.state.headerValue}
             newExample={() => this.props.addNewExample()}
-            valueSet={(e) => this.valueSet(e)}
+            valueSet={(e) => this.valueSet(e, "create")}
             example={this.state.example}
             setExampleValue={(newExample)=>this.setExampleValue(newExample)}
           />

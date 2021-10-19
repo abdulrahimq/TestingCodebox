@@ -107,12 +107,6 @@ class CustomModal extends Component {
                 setExampleSpecificValue={(valueName, value)=>this.setExampleSpecificValue(valueName, value)}
             />
           </div>
-            <textarea
-              value={this.props.value}
-              onChange={this.props.createExample}
-              id="example-textarea"
-            >
-            </textarea>
             <div className="example-buttons">
               <Button
                 id="create-button"
