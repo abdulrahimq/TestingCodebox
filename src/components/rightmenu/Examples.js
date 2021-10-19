@@ -39,6 +39,12 @@ class Examples extends React.Component {
     this.setState({ selected: item.i });
   };
 
+  setExampleValue = (newExample) => {
+    console.log("setExampleValue valueName value", newExample)
+    this.setState({ example: newExample })
+    console.log("setExampleValue ex updated", this.state.example)
+  }
+
   componentDidMount() {
     this.setState({
       editValue:
@@ -99,15 +105,14 @@ class Examples extends React.Component {
     );
     const validComment = new RegExp("(?<=Property Comment:)(.*?)(?=\\n)");
     const validCreator = new RegExp("(?<=Property Creator:)(.*)");
-    console.log("EXAMPLES CONVERT validWord: ", validWord);
-    console.log("EXAMPLES CONVERT validGloss: ", validGloss);
-    console.log("EXAMPLES CONVERT VALIDTRANSLATION:", validTranslation)
+    //console.log("EXAMPLES CONVERT validWord: ", validWord);
+    //console.log("EXAMPLES CONVERT validGloss: ", validGloss);
+    //console.log("EXAMPLES CONVERT VALIDTRANSLATION:", validTranslation)
     const lines = [validWord.exec(text)[0], validGloss.exec(text)[0], validTranslation.exec(text)[0]];
-    console.log("EXAMPLES CONVERT LINES: ", lines);
+    //console.log("EXAMPLES CONVERT LINES: ", lines);
     const aligned = alignWords(lines)
-    console.log("EXAMPLES CONVERT ALIGNED: ", aligned);
+    //console.log("EXAMPLES CONVERT ALIGNED: ", aligned);
     return {
-      description: validDesc.exec(text)[0],
       word: aligned[0],
       gloss: aligned[1],
       translation: aligned[2],
@@ -154,7 +159,7 @@ Property Creator: Hilda Koopman
 
 
   valueSetNew(e) {
-    console.log("CREATE :", e)
+    console.log("CREATE :", e.currentTarget)
     const element = e.currentTarget.parentNode.previousSibling
     console.log("CREATE EXAMPLE:", element)
     /*this.props.addNewExample(
@@ -168,13 +173,19 @@ Property Creator: Hilda Koopman
     console.log("CREATE EXAMPLE:", element)
     let value = this._convertValue(element.value);
     value["name"] = element.previousSibling.value;
+    // this.props.addNewExample(
+    //     this._convertValue(element.value),
+    //     element.previousSibling.value
+    // );
+    console.log("CREATE EXAMPLE!!: ", this.state.example)
     this.props.addNewExample(
-        this._convertValue(element.value),
-        element.previousSibling.value
+        this.state.example,
+        "TEMP"
     );
   }
 
   render() {
+    console.log("EXAMPLE STATE selected: ", this.state.selected)
     let disableEditButton = true;
     if (this.props.examples.length > 0) {
       disableEditButton = false;
@@ -230,7 +241,6 @@ Property Creator: Hilda Koopman
             newExample={() => this.props.addNewExample()}
             example={this.state.example}
           />
-
           <CustomModal
             modalIsOpen={this.state.modalCreateIsOpen}
             onRequestClose={() => this.closeCreateModal()}
@@ -244,6 +254,7 @@ Property Creator: Hilda Koopman
             newExample={() => this.props.addNewExample()}
             valueSet={(e) => this.valueSet(e)}
             example={this.state.example}
+            setExampleValue={(newExample)=>this.setExampleValue(newExample)}
           />
         </div>
 

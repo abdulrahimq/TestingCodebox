@@ -18,11 +18,14 @@ class CustomInput extends Component {
             <>
                 <textarea
                     type="text"
-                    id="example-gloss"
-                    name="example-gloss"
+                    id={this.props.id}
+                    name={this.props.name}
                     placeholder=""
                     value={this.state.name}
-                    onChange={e => this.changeText(e.currentTarget.value)}
+                    onChange={(e) => {
+                        this.changeText(e.currentTarget.value);
+                        this.props.setExampleSpecificValue(this.props.id, this.state.name)
+                    }}
                 />
             </>
         );

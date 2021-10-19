@@ -8,9 +8,27 @@ import CustomInput from "./CustomInput";
 class CustomModal extends Component {
   constructor(props) {
     super(props);
-    this.state = { value: "", testValue: "TEST"};
+    this.state = { 
+      value: "", 
+      testValue: "TEST", 
+      exampleNewValue: 
+        { 
+          name:"",
+          description:"",
+          word:"",
+          gloss:"",
+          translation:"",
+          comment:"",
+          creator:""
+        }
+      };
   }
 
+  setExampleSpecificValue(valueName, value){
+    let ex = this.state.exampleNewValue 
+    ex[valueName] = value
+    this.setState({exampleNewValue: ex})
+  }
 
   componentDidMount() {
     Modal.setAppElement("body");
@@ -18,7 +36,7 @@ class CustomModal extends Component {
 
 
   render() {
-    console.log("EXAMPLe: ", this.props.example)
+    console.log("CustomModal Example: ", this.state.exampleNewValue)
     return (
       <Modal
         isOpen={this.props.modalIsOpen}
@@ -45,43 +63,48 @@ class CustomModal extends Component {
             <label>Property Word</label>
             <CustomInput
                 type="text"
-                id="example-word"
+                id="word"
                 name="example-word"
                 placeholder=""
                 default={this.props.example.word}
+                setExampleSpecificValue={(valueName, value)=>this.setExampleSpecificValue(valueName, value)}
             />
             <label>Property Gloss</label>
             <CustomInput
                 type="text"
-                id="example-gloss"
+                id="gloss"
                 name="example-gloss"
                 placeholder=""
                 default={this.props.example.gloss}
+                setExampleSpecificValue={(valueName, value)=>this.setExampleSpecificValue(valueName, value)}
             />
             <label>Property Translation</label>
             <CustomInput
                 type="text"
-                id="example-translation"
+                id="translation"
                 name="example-translation"
                 placeholder=""
                 default={this.props.example.translation}
+                setExampleSpecificValue={(valueName, value)=>this.setExampleSpecificValue(valueName, value)}
             />
             <label>Property Comment</label>
             <CustomInput
                 type="text"
-                id="example-comment"
+                id="comment"
                 name="example-comment"
                 placeholder=""
                 default={this.props.example.comment}
+                setExampleSpecificValue={(valueName, value)=>this.setExampleSpecificValue(valueName, value)}
             />
 
             <label>Property Creator</label>
             <CustomInput
                 type="text"
-                id="example-creator"
+                id="creator"
                 name="example-creator"
                 placeholder=""
                 default={this.props.example.creator}
+                setExampleSpecificValue={(valueName, value)=>this.setExampleSpecificValue(valueName, value)}
             />
           </div>
             <textarea
@@ -100,6 +123,7 @@ class CustomModal extends Component {
                 onClick={(e) => {
                   this.props.closeModal();
                   this.props.valueSet(e);
+                  this.props.setExampleValue(this.state.exampleNewValue)
                 }}
               >
                 <label className="create-button">{this.props.buttonText}</label>
